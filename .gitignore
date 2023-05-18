@@ -22,3 +22,6 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/ws/sanMartin/ChickenFarmSimulator/nbproject/private/
+/ws/sanMartin/u1/ChickenFarmSimulator/nbproject/private/
+/ws/sanMartin/u1/ChickenFarmSimulator/build/
