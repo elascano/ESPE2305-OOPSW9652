@@ -1,3 +1,3 @@
 # BugBusters-Testing
 Testing respository for the practice with command prompt
-Cesar Galarza - workshops
+Cesar Galarza - workshop 03 Physics formula function java code

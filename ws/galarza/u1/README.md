@@ -1,3 +1,3 @@
 # BugBusters-Testing
 Testing respository for the practice with command prompt
-Cesar Galarza - workshops
+Cesar Galarza - workshops of unit 1
