@@ -1,2 +1,2 @@
 # ESPE2305-OOPSW9652
-Moreno Paul
+ESPE class of Object-Oriented Programming May 2023 Paul Moreno workshops
