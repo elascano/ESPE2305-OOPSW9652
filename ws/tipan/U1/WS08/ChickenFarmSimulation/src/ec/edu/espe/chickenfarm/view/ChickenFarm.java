@@ -27,27 +27,35 @@ public class ChickenFarm {
         Coop coop2;
         egg = new Egg(0);
         
-        chicken = new Chicken(1, "Lucy", "w&b", false, new Date(70, 0, 1));
+        chicken = new Chicken(1, "Martha", "brown", false, new Date(70, 0, 1));
         poop = new Poop(chicken.getId());
         chickens.add(chicken);
-        chicken = new Chicken(2, "Maruja", "w&b", false, new Date(70, 0, 1));
-        chickens.add(chicken);
-        chicken = new Chicken(3, "Leydi", "w&b", false, new Date(70, 0, 1));
-        chickens.add(chicken);
-        chicken = new Chicken(4, "Marta", "w&b", false, new Date(70, 0, 1));
-        chickens.add(chicken);
-        chicken = new Chicken(5, "Monica", "w&b", false, new Date(70, 0, 1));
+        
+        chicken = new Chicken(2, "Josefa", "brown", false, new Date(70, 0, 1));
         chickens.add(chicken);
         
-        chicken = new Chicken(1, "Claudia", "w&b", false, new Date(70, 0, 1));
+        chicken = new Chicken(3, "Miranda", "brown", false, new Date(70, 0, 1));
+        chickens.add(chicken);
+        
+        chicken = new Chicken(4, "Ariana", "brown", false, new Date(70, 0, 1));
+        chickens.add(chicken);
+        
+        chicken = new Chicken(5, "Anabel", "brown", false, new Date(70, 0, 1));
+        chickens.add(chicken);
+        
+        chicken = new Chicken(1, "Ortencia", "brown", false, new Date(70, 0, 1));
         chickens2.add(chicken);
-        chicken = new Chicken(2, "Maribel", "w&b", false, new Date(70, 0, 1));
+        
+        chicken = new Chicken(2, "Ana", "brown", false, new Date(70, 0, 1));
         chickens2.add(chicken);
-        chicken = new Chicken(3, "Marisol", "w&b", false, new Date(70, 0, 1));
+        
+        chicken = new Chicken(3, "Sofia", "brown", false, new Date(70, 0, 1));
         chickens2.add(chicken);
-        chicken = new Chicken(4, "Sol", "w&b", false, new Date(70, 0, 1));
+        
+        chicken = new Chicken(4, "Claudia", "brown", false, new Date(70, 0, 1));
         chickens2.add(chicken);
-        chicken = new Chicken(5, "Soyla", "w&b", false, new Date(70, 0, 1));
+        
+        chicken = new Chicken(5, "Samantha", "brown", false, new Date(70, 0, 1));
         chickens2.add(chicken);
         
         coop = new Coop(1, chickens);
