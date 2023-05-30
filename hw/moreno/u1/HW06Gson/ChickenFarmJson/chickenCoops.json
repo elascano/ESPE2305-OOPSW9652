@@ -1,0 +1,33 @@
+{
+  "id": 1,
+  "chickens": [
+    {
+      "id": 1,
+      "name": "Lucy",
+      "color": "black",
+      "age": 2,
+      "isMolting": false,
+      "bornOnDate": "Mar 21, 2021, 12:00:00 AM"
+    },
+    {
+      "id": 2,
+      "name": "Sam",
+      "color": "white",
+      "age": 22,
+      "isMolting": true,
+      "bornOnDate": "Jun 5, 2000, 12:00:00 AM"
+    }
+  ]
+}{
+  "id": 2,
+  "chickens": [
+    {
+      "id": 1,
+      "name": "Charly",
+      "color": "brown",
+      "age": 2,
+      "isMolting": true,
+      "bornOnDate": "Sep 30, 2020, 12:00:00 AM"
+    }
+  ]
+}
