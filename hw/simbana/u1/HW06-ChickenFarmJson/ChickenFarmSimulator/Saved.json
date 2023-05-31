@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "chickens": [
+    {
+      "id": 2,
+      "name": "Maria",
+      "color": "Blue",
+      "age": -2,
+      "isMolting": true,
+      "bornOnDate": "Oct 2, 2024, 12:00:00 AM"
+    }
+  ]
+}{
+  "id": 2,
+  "chickens": []
+}

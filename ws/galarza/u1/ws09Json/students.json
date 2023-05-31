@@ -1,0 +1,3 @@
+{"students":[
+{"id":0,"name":"Cesar Galarza","age":19,"avarage":9.90,"isWorking":true,"parents":[{"id":0,"name":"Hernan Galarza"},{"id":1,"name":"Maritza Villalva"}]},
+{"id":1,"name":"Jorge Lascano","age":19,"avarage":9.90,"isWorking":true}]}

@@ -1,0 +1,5 @@
+{"students":[
+{"id":0,"name":"Alison Miranda","age":19,"average":9.90,"isWorking":true,"parents":[{"id":0,"name":"Isabel"},{"id":1,"name":"Pepe"}]},
+{"id":1,"name":"Solange Creamer","age":19,"average":9.90,"isWorking": true}
+]
+}
