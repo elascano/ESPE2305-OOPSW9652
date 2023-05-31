@@ -1,0 +1,5 @@
+{"students":[
+{"id":0,"name":"Michael Simbana","age":52,"avarege":9.90,"isWorking":true,"parents":[{"id":
+0,"name":"Gina"},{"id":1,"name":"Miguel"}]},
+{"id":0,"name":"Michael Simbana","age":52,"avarege":9.90,"isWorking":true}
+]}
