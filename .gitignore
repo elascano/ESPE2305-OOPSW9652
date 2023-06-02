@@ -22,3 +22,11 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/ws/elascano/u1/ws05JavaClasses/ChickenFarmSimulator02/nbproject/private/
+/ws/elascano/u1/ws05JavaClasses/ChickenFarmSimulator02/dist/
+/ws/elascano/u1/ws05JavaClasses/ChickenFarmSimulator02/build/
+/ws/elascano/u1/ws07FromUmlToCode/chickenFarm2/nbproject/private/
+/ws/elascano/u1/ws07FromUmlToCode/chickenFarm2/build/
+/ws/elascano/u1/ws10Libraries/Tax2/nbproject/private/
+/ws/elascano/u1/ws10Libraries/SalesApp/nbproject/private/
+/ws/elascano/u1/ws10Libraries/SalesApp/build/
