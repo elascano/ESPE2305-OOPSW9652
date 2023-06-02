@@ -1,0 +1,7 @@
+{"student": [
+{"id":0,"name":"Gabriel Baez","age":19,"average":9.90,"isWorking":true,"parents":{"id"
+:0,"name":"Isabel"}},
+{"id":0,"name":"Gabriel Baez","age":19,"average":9.90,"isWorking":true,"parents":[{"id"
+:0,"name":"Ibeth"},{"id":1,"name":"Carlos"]}
+]
+}

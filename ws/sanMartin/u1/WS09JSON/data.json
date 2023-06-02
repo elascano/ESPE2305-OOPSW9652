@@ -1,0 +1,4 @@
+{"students":
+[{"id":0,"name":"Jose Sanmartin","age":24,"average":9.90,"isWorking":true,"parents":[{"id":0,"name":"Wendy Galan","age":45,"average":9.90,"isWorking":true},{"id":1,"name":"Renato Sanmartin","age":49,"average":9.90,"isWorking":true}]},
+{"id":1,"name":"Jose Sanmartin","age":52,"average":9.90,"isWorking":true}
+]}

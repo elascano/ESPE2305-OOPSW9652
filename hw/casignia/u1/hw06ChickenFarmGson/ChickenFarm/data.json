@@ -1,0 +1,33 @@
+{
+  "id": 1,
+  "chickens": [
+    {
+      "id": 1,
+      "name": "Claudia",
+      "color": "yellow",
+      "age": 1936,
+      "isMolting": true,
+      "bornOnDate": "May 12, 87, 12:00:00 AM"
+    },
+    {
+      "id": 2,
+      "name": "Regina",
+      "color": "Black",
+      "age": 1956,
+      "isMolting": false,
+      "bornOnDate": "May 23, 67, 12:00:00 AM"
+    }
+  ]
+}{
+  "id": 2,
+  "chickens": [
+    {
+      "id": 3,
+      "name": "Martha",
+      "color": "blue",
+      "age": 1933,
+      "isMolting": true,
+      "bornOnDate": "Jun 21, 89, 12:00:00 AM"
+    }
+  ]
+}

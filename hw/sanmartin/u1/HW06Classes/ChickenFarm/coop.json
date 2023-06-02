@@ -1,0 +1,33 @@
+{
+  "id": 1,
+  "chickens": [
+    {
+      "id": 1,
+      "name": "Prisccy",
+      "color": "b",
+      "age": 8,
+      "isMolting": true,
+      "bornDate": "Mar 23, 2015, 12:00:00 AM"
+    },
+    {
+      "id": 2,
+      "name": "Hellen",
+      "color": "y",
+      "age": 5,
+      "isMolting": true,
+      "bornDate": "Jul 1, 2017, 12:00:00 AM"
+    }
+  ]
+}{
+  "id": 2,
+  "chickens": [
+    {
+      "id": 1,
+      "name": "Mel",
+      "color": "b",
+      "age": -1,
+      "isMolting": false,
+      "bornDate": "Aug 2, 2023, 12:00:00 AM"
+    }
+  ]
+}
