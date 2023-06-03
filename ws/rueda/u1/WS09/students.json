@@ -1,0 +1,32 @@
+{
+	"students": [{
+			"id": 0,
+			"name": "Juan Rueda",
+			"age": 20,
+			"average": 9.90,
+			"isWorking": true,
+			"parents": [{
+					"id": 0,
+					"name": "Tanya Vilatuña",
+					"age": 44,
+					"average": 9.90,
+					"isWorking": true
+				},
+				{
+					"id": 1,
+					"name": "Esteban Rueda",
+					"age": 44,
+					"average": 9.90,
+					"isWorking": true
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Micaela Rueda",
+			"age": 20,
+			"average": 9.90,
+			"isWorking": true
+		}
+	]
+}
