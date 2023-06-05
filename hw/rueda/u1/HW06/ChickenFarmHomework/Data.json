@@ -1,0 +1,41 @@
+{
+  "id": 1,
+  "chickens": [
+    {
+      "id": 1,
+      "name": "lola",
+      "color": "w",
+      "age": 6,
+      "isMolting": true,
+      "bornOnDate": "Nov 21, 2016, 12:00:00 AM"
+    },
+    {
+      "id": 2,
+      "name": "paula",
+      "color": "bl",
+      "age": 13,
+      "isMolting": false,
+      "bornOnDate": "May 19, 2010, 12:00:00 AM"
+    }
+  ]
+}{
+  "id": 2,
+  "chickens": [
+    {
+      "id": 1,
+      "name": "ali",
+      "color": "br",
+      "age": 3,
+      "isMolting": false,
+      "bornOnDate": "Jan 22, 2020, 12:00:00 AM"
+    },
+    {
+      "id": 2,
+      "name": "mia",
+      "color": "w",
+      "age": 3,
+      "isMolting": true,
+      "bornOnDate": "Feb 19, 2020, 12:00:00 AM"
+    }
+  ]
+}
