@@ -19,31 +19,9 @@
 *.tar.gz
 *.rar
 
+# Vpp Temp Files "
+*.bak*
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
-/ws/sanMartin/ChickenFarmSimulator/nbproject/private/
-/ws/sanMartin/u1/ChickenFarmSimulator/nbproject/private/
-/ws/sanMartin/u1/ChickenFarmSimulator/build/
-/ws/sanMartin/u1/PhysicFormulas/nbproject/private/
-/ws/sanMartin/u1/PhysicFormulas/build/
-/ws/sanMartin/u1/HomeworkPhysicFormula/nbproject/private/
-/ws/sanMartin/u1/HomeworkPhysicFormula/build/
-/ws/sanMartin/u1/WS07FromUMLtocode/ChickenFarm/nbproject/private/
-/ws/sanMartin/u1/WS07FromUMLtocode/ChickenFarm/build/
-/ws/sanMartin/u1/WS07FromUMLtocode/ChickenFarm/dist/
-
-
-/ws/ramos/u1/WS08Collections/ChickenFarm3/nbproject/private/
-/ws/ramos/u1/WS08Collections/ChickenFarm3/build/
-/ws/ramos/u1/Tax/Tax/nbproject/private/
-/ws/ramos/u1/Tax/Tax/build/
-/ws/ramos/u1/Tax/Sales/nbproject/private/
-/ws/ramos/u1/WS10/Ssles/nbproject/private/
-/ws/ramos/u1/WS10/Ssles/build/
-/ws/ramos/u1/WS10Libraries/Sales/build/
-/ws/ramos/u1/WS10Libraries/Sales/nbproject/private/
-/ws/sanMartin/u1/WS10Tags/JavaLibrary1/nbproject/private/
-/ws/sanMartin/u1/WS10Tags/SalesApp2/nbproject/private/
-/ws/sanMartin/u1/WS10Tags/SalesApp2/build/
-
