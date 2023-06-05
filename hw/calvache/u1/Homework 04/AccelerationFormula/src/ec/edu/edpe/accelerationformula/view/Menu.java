@@ -14,11 +14,11 @@ public class Menu {
       Scanner selectedOption=new Scanner(System.in);
       
       int option;
-        System.out.println("----Acceleration Calculator----");
+        System.out.println("----CHICKEN FARM BY GABRIEL CALVACHE----");
         do{
         System.out.println("\nPlease select one option:");
-        System.out.println("1.Insert Data");
-        System.out.println("2.Read Data");
+        System.out.println("1.Create Coop");
+        System.out.println("2.Insert data in Coop");
         System.out.println("3.Exit");
         System.out.println("Selected option: ");
         option= selectedOption.nextInt();
