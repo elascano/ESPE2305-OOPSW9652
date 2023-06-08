@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "price": 123.0,
+    "stock": "Yes"
+  },
+  {
+    "id": 2,
+    "price": 85.0,
+    "stock": "No"
+  },
+  {
+    "id": 3,
+    "price": 67.0,
+    "stock": "No"
+  },
+  {
+    "id": 4,
+    "price": 150.0,
+    "stock": "Yes"
+  }
+]
