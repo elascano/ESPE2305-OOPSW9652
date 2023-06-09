@@ -15,7 +15,7 @@ public class ProgramForCalculate {
     static double distanceTheCentreOfGravitiesOfBothObject = 0;
         
     public static void main(String[] args) throws IOException {  
-        BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\oswal\\Desktop\\Personal\\IngSoftware\\OOP\\U1\\ProgramForCalculate\\Data.csv", true));
+        BufferedWriter writer = new BufferedWriter(new FileWriter("data\\Data.csv", true));
         writer.newLine();
         writer.write("GravitatioalConstat, Mass Of Object One, Mass Of Object Two, Distance The Centre of Gravity Of Both Objects, Gravitational Force");
         mainMenu(writer); 
