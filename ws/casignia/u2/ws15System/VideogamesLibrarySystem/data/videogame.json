@@ -1,0 +1,18 @@
+[
+  {
+    "language": "English",
+    "title": "God of War",
+    "genre": "Action",
+    "price": 49.99,
+    "developer": "Santa Monica Studio",
+    "isMultiplayer": false
+  },
+  {
+    "language": "spanish",
+    "title": "Parchis",
+    "genre": "board game",
+    "price": 0.0,
+    "developer": "Gamberry Labs",
+    "isMultiplayer": true
+  }
+]
