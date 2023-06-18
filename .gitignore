@@ -35,8 +35,17 @@ replay_pid*
 /ws/galarza/u1/ws10Libraries/Tax/nbproject/private/
 /ws/galarza/u1/ws10Libraries/SalesApp/nbproject/private/
 /ws/galarza/u1/ws10Libraries/SalesApp/build/
+<<<<<<< HEAD
 /ws/ramos/u2/WS16Libraries/Tax/nbproject/private/
 /ws/ramos/u2/WS16Libraries/Tax/build/
 /ws/ramos/u2/WS16Libraries/Tax/dist/
 /ws/ramos/u2/WS16Libraries/ShoeSales/nbproject/private/
 /ws/ramos/u2/WS16Libraries/ShoeSales/build/
+=======
+/ws/zurita/U2/WS16/Tax/nbproject/private/
+/ws/zurita/U2/WS16/Tax/build/
+/ws/zurita/U2/WS16/Tax/dist/
+/ws/zurita/U2/WS16/ShoeSales/nbproject/private/
+/ws/zurita/U2/WS16/ShoeSales/build/
+/ws/zurita/U2/WS16/ShoeSales/dist/
+>>>>>>> 210d7409ae135129adfe934f2502f290c07d24ef

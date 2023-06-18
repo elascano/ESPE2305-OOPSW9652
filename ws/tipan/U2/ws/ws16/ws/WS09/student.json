@@ -1,0 +1,23 @@
+{
+	"students": [{
+			"id": 0,
+			"name": "Oswaldo Tipan",
+			"age": 22,
+			"average": 9.9,
+			"isWorking": true,
+			"parents": [{
+				"id": 0,
+				"name": "Jose Tipan"
+			}, {
+				"id": 1,
+				"name ": "Betty Moreira"
+			}]
+		},
+		{
+			"id": 0,
+			"name": "Oswaldo Tipan",
+			"age": 22,
+			"average": 9.9
+		}
+	]
+}
