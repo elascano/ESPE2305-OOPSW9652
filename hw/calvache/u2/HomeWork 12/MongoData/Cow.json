@@ -1,0 +1,7 @@
+[{
+	"id": 1,
+	"breed": "Holstein",
+	"leather": "true",
+	"isProducingMilk": "true",
+	"name": "Cow"
+}]
