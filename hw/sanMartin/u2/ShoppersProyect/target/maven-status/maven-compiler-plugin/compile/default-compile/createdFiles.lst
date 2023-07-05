@@ -1,0 +1,4 @@
+ec\edu\espe\shopper\view\Main.class
+ec\edu\espe\shoppper\controller\Menu.class
+ec\edu\espe\shoppper\controller\ShoppersReadPrint.class
+ec\edu\espe\shopper\model\Shopper.class
