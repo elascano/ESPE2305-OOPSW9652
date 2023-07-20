@@ -9,7 +9,7 @@ import org.bson.Document;
 
 /**
  *
- * @author Sanmertin Jose, OOP-ERATION-GOSLING,DCC-ESPE
+ * @author Michael Simbaña, OOP-ERATION-GOSLING,DCC-ESPE
  */
 public class MongoDBConnection {
    private MongoClient mongoClient;
