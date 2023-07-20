@@ -1,4 +1,4 @@
-package ec.edu.espe.crud.utils;
+package ec.edu.espe.q71100.utils;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;

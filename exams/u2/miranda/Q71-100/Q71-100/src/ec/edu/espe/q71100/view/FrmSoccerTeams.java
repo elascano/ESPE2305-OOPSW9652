@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package ec.edu.espe.q71100.view;
 
 import ec.edu.espe.q71100.controller.SoccerTeamsController;
@@ -17,7 +13,7 @@ public class FrmSoccerTeams extends javax.swing.JFrame {
     /**
      * Creates new form FrmSoccerTeams
      */
-    private SoccerTeamsController soccerTeamsController;
+    private final SoccerTeamsController soccerTeamsController;
     public FrmSoccerTeams() {
         initComponents();
         soccerTeamsController = new SoccerTeamsController();
@@ -42,6 +38,8 @@ public class FrmSoccerTeams extends javax.swing.JFrame {
         txtNumberOfPlayers = new javax.swing.JTextField();
         txtFeePerPlayer = new javax.swing.JTextField();
         btnRead = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        txtTotalFee = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,34 +60,37 @@ public class FrmSoccerTeams extends javax.swing.JFrame {
             }
         });
 
+        jLabel6.setText("TOTAL FEE");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(141, 141, 141)
-                            .addComponent(jLabel1))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(31, 31, 31)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel3)
-                                .addComponent(jLabel2)
-                                .addComponent(jLabel4)
-                                .addComponent(jLabel5))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(txtName, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
-                                .addComponent(txtNumberOfPlayers)
-                                .addComponent(txtFeePerPlayer)
-                                .addComponent(txtId))
-                            .addGap(0, 0, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(111, 111, 111)
+                        .addGap(141, 141, 141)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(173, 173, 173)
                         .addComponent(btnRead)))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addGap(0, 189, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtName)
+                    .addComponent(txtNumberOfPlayers)
+                    .addComponent(txtFeePerPlayer)
+                    .addComponent(txtId)
+                    .addComponent(txtTotalFee, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -112,26 +113,37 @@ public class FrmSoccerTeams extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(txtFeePerPlayer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(txtTotalFee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addComponent(btnRead)
-                .addGap(39, 39, 39))
+                .addGap(19, 19, 19))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnReadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReadActionPerformed
-        int id = Integer.parseInt(txtId.getText());
-        SoccerTeams soccerTeams = soccerTeamsController.readSoccerTeams(id);
-        if (soccerTeams != null) {
-            txtName.setText(soccerTeams.getName());
-            txtNumberOfPlayers.setText(String.valueOf(soccerTeams.getNumberOfPlayers()));
-            txtFeePerPlayer.setText(String.valueOf(soccerTeams.getFeePerPlayer()));
-        } else {
-            JOptionPane.showMessageDialog(null, "soccerTeam not found!");
-        }
+            int id = Integer.parseInt(txtId.getText());
+            SoccerTeams soccerTeams = soccerTeamsController.readSoccerTeams(id);
+
+            if (soccerTeams != null) {
+                txtName.setText(soccerTeams.getName());
+                txtNumberOfPlayers.setText(String.valueOf(soccerTeams.getNumberOfPlayers()));
+                txtFeePerPlayer.setText(String.valueOf(soccerTeams.getFeePerPlayer()));
+                txtTotalFee.setText(String.valueOf(soccerTeams.getTotalFee())); 
+            } else {
+                txtName.setText("");
+                txtNumberOfPlayers.setText("");
+                txtFeePerPlayer.setText("");
+                txtTotalFee.setText(""); 
+                JOptionPane.showMessageDialog(null, "Equipo de fútbol no encontrado.");
+            }
     }//GEN-LAST:event_btnReadActionPerformed
 
+    
     /**
      * @param args the command line arguments
      */
@@ -174,9 +186,11 @@ public class FrmSoccerTeams extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField txtFeePerPlayer;
     private javax.swing.JTextField txtId;
     private javax.swing.JTextField txtName;
     private javax.swing.JTextField txtNumberOfPlayers;
+    private javax.swing.JTextField txtTotalFee;
     // End of variables declaration//GEN-END:variables
 }
