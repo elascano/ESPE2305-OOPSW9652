@@ -5,6 +5,7 @@
 package ec.edu.espe.codepartexam.view;
 
 import ec.edu.espe.codepartexam.cotroller.StudentController;
+import ec.edu.espe.codepartexam.model.Student;
 import javax.swing.JTextField;
 
 /**
@@ -39,7 +40,7 @@ public class FrmAddStudent extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         txtName = new javax.swing.JTextField();
         txtMonthlyPayment = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        cmbCourse = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(226, 242, 242));
@@ -87,7 +88,7 @@ public class FrmAddStudent extends javax.swing.JFrame {
 
         jLabel4.setText("MonthlyPayment:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Primero", "Segundo", "Tercero", "Cuarto", "Quinto", "Sexto" }));
+        cmbCourse.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Primero", "Segundo", "Tercero", "Cuarto", "Quinto", "Sexto" }));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -108,7 +109,7 @@ public class FrmAddStudent extends javax.swing.JFrame {
                             .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGap(38, 38, 38)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(cmbCourse, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtName)
                             .addComponent(txtMonthlyPayment))))
                 .addContainerGap(55, Short.MAX_VALUE))
@@ -123,7 +124,7 @@ public class FrmAddStudent extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cmbCourse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
@@ -157,7 +158,17 @@ public class FrmAddStudent extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        String name = txtName.getText().toString();
+        String monthlyPayment = txtMonthlyPayment.getText();
+        int id =1;
+        int course = (int) cmbCourse.getSelectedItem();
+        
+        Student student = new Student(id, course, name, monthlyPayment);
+        
         StudentController studentController = new StudentController();
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
@@ -201,8 +212,8 @@ public class FrmAddStudent extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
+    private javax.swing.JComboBox<String> cmbCourse;
     private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -39,7 +39,7 @@ public class StudentController {
                 holisticStudentDocument.append("_id", student.getId());
                 holisticStudentDocument.append("name", student.getName());
                 holisticStudentDocument.append("txtMonthlyPayment", student.getMonthylPayment());
-                holisticStudentDocument.append("course", student.getCourse());
+                holisticStudentDocument.append("course", student.getCourse()    );
                 collection.insertOne(holisticStudentDocument);    
             } catch (MongoException me) {
 

@@ -108,7 +108,7 @@
                           </Group>
                           <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jComboBox1" max="32767" attributes="0"/>
+                              <Component id="cmbCourse" max="32767" attributes="0"/>
                               <Component id="txtName" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtMonthlyPayment" alignment="0" max="32767" attributes="0"/>
                           </Group>
@@ -129,7 +129,7 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
+                      <Component id="cmbCourse" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -182,7 +182,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtMonthlyPayment">
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox1">
+        <Component class="javax.swing.JComboBox" name="cmbCourse">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="6">
