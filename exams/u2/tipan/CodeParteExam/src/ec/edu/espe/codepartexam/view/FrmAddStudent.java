@@ -89,6 +89,11 @@ public class FrmAddStudent extends javax.swing.JFrame {
         jLabel4.setText("MonthlyPayment:");
 
         cmbCourse.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Primero", "Segundo", "Tercero", "Cuarto", "Quinto", "Sexto" }));
+        cmbCourse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbCourseActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -162,18 +167,28 @@ public class FrmAddStudent extends javax.swing.JFrame {
         String name = txtName.getText().toString();
         String monthlyPayment = txtMonthlyPayment.getText();
         int id =1;
-        int course = (int) cmbCourse.getSelectedItem();
+        int course = (int) cmbCourse.getSelectedIndex();
         
         Student student = new Student(id, course, name, monthlyPayment);
         
         StudentController studentController = new StudentController();
+        studentController.fileWritter(student);
+        FrmMenu frmMenu = new FrmMenu();
+        frmMenu.setVisible(true);
+        this.setVisible(false);
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        // TODO add your handling code here:
+        FrmMenu frmMenu = new FrmMenu();
+        frmMenu.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnBackActionPerformed
+
+    private void cmbCourseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbCourseActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbCourseActionPerformed
 
     /**
      * @param args the command line arguments

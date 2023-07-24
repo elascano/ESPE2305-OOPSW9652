@@ -27,12 +27,12 @@ import org.bson.Document;
  * @author Oswaldo Tipan
  */
 public class StudentController {
-    public String uri = "mongodb+srv://jmsanmartin:12345@managmentsystem.kklzuz1.mongodb.net/?retryWrites=true&w=majority";
+    public String uri = "mongodb+srv://ojtipan:trabatrix2@farm.am6duog.mongodb.net/?retryWrites=true&w=majority";
      
     public void fileWritter(Student student){
         try (MongoClient mongoClient = MongoClients.create(uri)) {
-            MongoDatabase database = mongoClient.getDatabase("SchoolManagmentSystem");
-            MongoCollection<Document> collection = database.getCollection("Student");
+            MongoDatabase database = mongoClient.getDatabase("Manager");
+            MongoCollection<Document> collection = database.getCollection("Manager");
                         
             try {
                 Document holisticStudentDocument = new Document();
