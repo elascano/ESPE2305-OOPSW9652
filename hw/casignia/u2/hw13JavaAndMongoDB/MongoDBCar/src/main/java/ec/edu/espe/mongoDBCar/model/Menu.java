@@ -12,14 +12,9 @@ public class Menu {
         int option;
        
         Scanner sc = new Scanner(System.in);
-        System.out.println("----Car Storage System----");
-        System.out.println("----By Diego Casignia and Gabriel Calvache----");
-        System.out.println("1.Insert New Car");
-        System.out.println("2.Search Car");
-        System.out.println("3.Modify Car");
-        System.out.println("4.Delete Car");
-        System.out.println("5.Show all cars");
-        System.out.println("6.Exit");
+        System.out.println("----Student System----");
+        System.out.println("1.Show Student");
+        System.out.println("2.Exit");
         System.out.println("Please select an option");
         option = sc.nextInt();
         return option;
