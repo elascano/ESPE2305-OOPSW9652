@@ -25,7 +25,7 @@ public class ShoesSalesSystem {
         float income;
         float incomeTax;
         DataTax dataSalary = new DataTax();
-        System.out.println("Michael Simbana Shoe Maker");
+        System.out.println("Juans Store");
         
         int option;
         do {

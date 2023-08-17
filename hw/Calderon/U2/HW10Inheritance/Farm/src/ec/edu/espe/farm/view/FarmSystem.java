@@ -43,7 +43,7 @@ public class FarmSystem {
         System.out.println("Chicken ate --> "+ chicken.produce(meat));
         
         
-        farmAnimal = new Pig(3, "Landrace", new Date());
+        farmAnimal = new Pig(3, "Albera", new Date());
         
         printTypeAndANIMAL(farmAnimal);
         
@@ -54,21 +54,21 @@ public class FarmSystem {
         printTypeAndANIMAL(farmAnimal);
         System.out.println(farmAnimal);
         
-        farmAnimal = new Cow(true, 5, 1, "Albera", new Date());
+        farmAnimal = new Cow(true, 5, 2, "Lamdrace", new Date());
         printTypeAndANIMAL(farmAnimal);
         System.out.println(farmAnimal);
         
-        farmAnimal = new Goat(3, 1, "Boer",new Date());
-        printTypeAndANIMAL(farmAnimal);
-        System.out.println(farmAnimal);
-        
-        
-        farmAnimal = new Sheep(new Date(), 0.4F, 1, "Merino", new Date());
+        farmAnimal = new Goat(3, 3, "Boer",new Date());
         printTypeAndANIMAL(farmAnimal);
         System.out.println(farmAnimal);
         
         
-        farmAnimal = new Alpaca(new Date(), 0.2F, 1, "Huacaya", new Date());
+        farmAnimal = new Sheep(new Date(), 0.4F, 4, "Resirvu", new Date());
+        printTypeAndANIMAL(farmAnimal);
+        System.out.println(farmAnimal);
+        
+        
+        farmAnimal = new Alpaca(new Date(), 0.2F, 5, "Racaya", new Date());
         printTypeAndANIMAL(farmAnimal);
         System.out.println(farmAnimal);
         
@@ -78,9 +78,9 @@ public class FarmSystem {
 
     private static void printTypeAndANIMAL(FarmAnimal farmAnimal) {
         
-        System.out.println("-------------------------");
-        System.out.println("\nType of farmAnimal --> " + farmAnimal.getClass().getSimpleName());
-        System.out.println("-------------------------");
+       
+        System.out.println("\nType of Animal " + farmAnimal.getClass().getSimpleName());
+       
     
     }
 }
