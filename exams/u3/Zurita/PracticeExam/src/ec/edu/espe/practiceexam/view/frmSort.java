@@ -6,7 +6,6 @@ package ec.edu.espe.practiceexam.view;
 
 import ec.edu.espe.practiceexam.controller.SortingContext;
 import ec.edu.espe.practiceexam.utils.MongoConection;
-import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Arrays;
 import org.bson.Document;
@@ -14,7 +13,7 @@ import org.bson.types.ObjectId;
 
 /**
  *
- * @author Pablo Zurita, OOP-ERATION-GOSLING,DCC-ESPE
+ * @author Sanmertin Jose, OOP-ERATION-GOSLING,DCC-ESPE
  */
 public class frmSort extends javax.swing.JFrame {
 
@@ -23,8 +22,6 @@ public class frmSort extends javax.swing.JFrame {
      */
     public frmSort() {
         initComponents();
-        lbeWarning1.setVisible(false);
-        
     }
 
     /**
@@ -36,259 +33,60 @@ public class frmSort extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
         txtNumberRecive = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        lbeWarning1 = new javax.swing.JLabel();
         btnAddNumber = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        lbeExit = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        resultPanel = new javax.swing.JPanel();
-        jSeparator1 = new javax.swing.JSeparator();
-        btnCleane = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
         txtSortingArray = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
-        setResizable(false);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-
-        txtNumberRecive.setForeground(new java.awt.Color(153, 153, 153));
-        txtNumberRecive.setText("Example: 2,3,4,5,6,7,8");
-        txtNumberRecive.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                txtNumberReciveMouseClicked(evt);
-            }
-        });
-        txtNumberRecive.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNumberReciveActionPerformed(evt);
-            }
-        });
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Sort Program");
-
-        jLabel3.setText("Enter the numbers separed by commas:");
-
-        lbeWarning1.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
-        lbeWarning1.setForeground(new java.awt.Color(255, 0, 51));
-        lbeWarning1.setText("*The field must be filled in");
-
-        btnAddNumber.setText("Sort Numbers");
+        btnAddNumber.setText("Add Number");
         btnAddNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddNumberActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(52, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(txtNumberRecive, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(lbeWarning1)))
-                .addGap(70, 70, 70))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(148, 148, 148)
-                .addComponent(btnAddNumber)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtNumberRecive, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbeWarning1)
-                .addGap(18, 18, 18)
-                .addComponent(btnAddNumber)
-                .addContainerGap(14, Short.MAX_VALUE))
-        );
-
-        jPanel3.setBackground(new java.awt.Color(102, 153, 255));
-
-        lbeExit.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        lbeExit.setForeground(new java.awt.Color(255, 255, 255));
-        lbeExit.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbeExit.setText("x");
-        lbeExit.setToolTipText("");
-        lbeExit.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        lbeExit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lbeExitMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                lbeExitMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                lbeExitMouseExited(evt);
-            }
-        });
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI Historic", 2, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel5.setText("Pablo Zurita");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 301, Short.MAX_VALUE)
-                .addComponent(lbeExit, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(3, 3, 3))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(lbeExit, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(16, 16, 16))
-        );
-
-        resultPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        btnCleane.setText("Restart");
-        btnCleane.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCleaneActionPerformed(evt);
-            }
-        });
-
-        jLabel4.setText("Result of sort:");
-
-        javax.swing.GroupLayout resultPanelLayout = new javax.swing.GroupLayout(resultPanel);
-        resultPanel.setLayout(resultPanelLayout);
-        resultPanelLayout.setHorizontalGroup(
-            resultPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(resultPanelLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(resultPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(resultPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(resultPanelLayout.createSequentialGroup()
-                        .addComponent(txtSortingArray, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 70, Short.MAX_VALUE))))
-            .addGroup(resultPanelLayout.createSequentialGroup()
-                .addGap(163, 163, 163)
-                .addComponent(btnCleane)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
-        );
-        resultPanelLayout.setVerticalGroup(
-            resultPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(resultPanelLayout.createSequentialGroup()
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(13, 13, 13)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtSortingArray, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnCleane)
-                .addContainerGap(18, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(resultPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(resultPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("SortNumbers");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(68, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnAddNumber)
+                    .addComponent(txtSortingArray)
+                    .addComponent(txtNumberRecive, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(54, 54, 54))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
+                .addComponent(txtNumberRecive, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnAddNumber)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(txtSortingArray, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(107, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddNumberActionPerformed
-        if ("".equals(txtNumberRecive.getText())||"Example: 2,3,4,5,6,7,8".equals(txtNumberRecive.getText())) {
-           lbeWarning1.setVisible(true); 
-        }
-        if (rootPaneCheckingEnabled) {
-            
-        }
-        else{
-            reciveData();
-            
-        }
-        
+        reciveData();
     }//GEN-LAST:event_btnAddNumberActionPerformed
-
-    private void btnCleaneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCleaneActionPerformed
-        txtNumberRecive.setText("");
-        txtSortingArray.setText("");
-    }//GEN-LAST:event_btnCleaneActionPerformed
-
-    private void txtNumberReciveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNumberReciveMouseClicked
-        txtNumberRecive.setText("");
-        txtNumberRecive.setForeground(Color.black);
-    }//GEN-LAST:event_txtNumberReciveMouseClicked
-
-    private void lbeExitMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbeExitMouseEntered
-        lbeExit.setForeground(Color.black);
-    }//GEN-LAST:event_lbeExitMouseEntered
-
-    private void lbeExitMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbeExitMouseExited
-        lbeExit.setForeground(Color.white);
-    }//GEN-LAST:event_lbeExitMouseExited
-
-    private void lbeExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbeExitMouseClicked
-       System.exit(1);
-    }//GEN-LAST:event_lbeExitMouseClicked
-
-    private void txtNumberReciveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumberReciveActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNumberReciveActionPerformed
 public void reciveData() throws NumberFormatException {
         String uri = "mongodb+srv://pzurita:pzurita@cluster0.ohfzkul.mongodb.net/?retryWrites=true&w=majority";
         String[] numberInput = txtNumberRecive.getText().split(",");
@@ -356,18 +154,7 @@ public void reciveData() throws NumberFormatException {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddNumber;
-    private javax.swing.JButton btnCleane;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JLabel lbeExit;
-    private javax.swing.JLabel lbeWarning1;
-    private javax.swing.JPanel resultPanel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField txtNumberRecive;
     private javax.swing.JTextField txtSortingArray;
     // End of variables declaration//GEN-END:variables
