@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Strategy">
+  <ClassDiagramComponents>
+    <Class name="BubbleSort" package="ec.ecu.espe.stratefy.controller" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="sort" returnType="int[]" visibility="public">
+          <Argument type="int[]" name="data"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="InsertionSort" package="ec.ecu.espe.stratefy.controller" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="sort" returnType="int[]" visibility="public">
+          <Argument type="int[]" name="data"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="QuickSort" package="ec.ecu.espe.stratefy.controller" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="sort" returnType="int[]" visibility="public">
+          <Argument type="int[]" name="data"/>
+        </Method>
+        <Method name="quickSort" returnType="int[]" visibility="private">
+          <Argument type="int[]" name="data"/>
+          <Argument type="int" name="low"/>
+          <Argument type="int" name="high"/>
+        </Method>
+        <Method name="partition" returnType="int" visibility="package" isStatic="true">
+          <Argument type="int[]" name="data"/>
+          <Argument type="int" name="low"/>
+          <Argument type="int" name="high"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SortingContext" package="ec.ecu.espe.stratefy.controller" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="sortStrategy" type="SortingStrategy" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="sort" returnType="int[]" visibility="public">
+          <Argument type="int" name="data"/>
+        </Method>
+        <Method name="setSortStrategy" returnType="SortingStrategy" visibility="public">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="getSortStrategy" returnType="SortingStrategy" visibility="public"/>
+        <Method name="setSortStrategy" returnType="void" visibility="public">
+          <Argument type="SortingStrategy" name="sortStrategy"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="SortingStrategy" package="ec.ecu.espe.stratefy.controller" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Methods>
+        <Method name="sort" returnType="int[]" visibility="public">
+          <Argument type="int" name="data"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Class name="MongoDB" package="ec.ecu.espe.stratefy.utils" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getConnection" returnType="MongoCollection&lt;org.bson.Document&gt;" visibility="public" isStatic="true">
+          <Argument type="String" name="collection"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Operation" package="ec.ecu.espe.stratefy.utils" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="addSortMethod" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Document" name="sortMethod"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FrmStrategy" package="ec.ecu.espe.stratefy.view" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="btnClear" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnExit" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnSort" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="txaNoSortedNumbers" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="txaSorten" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="txtMethod" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btnExitActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="txaNoSortedNumbersKeyTyped" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="btnSortActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnClearActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="Sort" returnType="void" visibility="private"/>
+        <Method name="validateField" returnType="void" visibility="private">
+          <Argument type="KeyEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ec.ecu.espe.stratefy.controller.QuickSort" target="ec.ecu.espe.stratefy.controller.SortingStrategy"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ec.ecu.espe.stratefy.controller.BubbleSort" target="ec.ecu.espe.stratefy.controller.SortingStrategy"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ec.ecu.espe.stratefy.controller.InsertionSort" target="ec.ecu.espe.stratefy.controller.SortingStrategy"/>
+    <HasRelation name="sortStrategy" source="ec.ecu.espe.stratefy.controller.SortingContext" target="ec.ecu.espe.stratefy.controller.SortingStrategy" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.ecu.espe.stratefy.controller.SortingContext" target="ec.ecu.espe.stratefy.controller.SortingStrategy" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
