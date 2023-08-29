@@ -1,0 +1,11 @@
+Grupo 2: BugBuster
+Galarza  Luis
+Ludeña Edison
+Miranda Alison
+Juego de memoria con cartas:
+Cartas de juego de memoria con temática de EUR-ACE.- Se solicitará hacer pares de cartas que incluyen información relacionada con los elementos clave de la acreditación y los correspondientes elementos gráficos que componen el logo. Las preguntas que se realizarán una vez hecho los pares serán de las temáticas:
+- Nombres de competencias o habilidades: Incluimos los nombres de las competencias y/o habilidades específicas que se evalúan en el marco de la acreditación EUR-ACE. Por ejemplo, "Habilidades de comunicación", "Conocimientos técnicos", "Capacidad de trabajo en equipo", etc.
+- Descripciones de competencias: En lugar de solo los nombres, agregar una breve descripción de cada competencia en las cartas. Esto ayudará a los estudiantes a comprender mejor el significado de cada competencia y su importancia en el contexto de la acreditación.
+- Áreas de conocimiento: EUR-ACE abarca diferentes campos de estudio, representando esto en las cartas incluyendo nombres de áreas de conocimiento específicas, como "Ingeniería de Sistemas" o "Ingeniería en TI".
+- Siglas y logotipos: Averiguar si conocen las siglas de "EUR-ACE" y los logotipos asociados a la acreditación. Esto ayudará a reforzar la temática y a familiarizar a los estudiantes con la marca EUR-ACE.
+Importante: La información que se puede incluir en cada carta es limitada, por lo que es importante que sea concisa y fácil de comprender. Además, las imágenes elegidas serán representativas de la información que se encuentra en cada carta para facilitar la asociación visual y la memoria del juego.
